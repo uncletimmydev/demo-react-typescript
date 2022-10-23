@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import HomeContrainer from '../components/HomeContainer/HomeContainer'
 import MySection from '../components/MySection/MySection'
+import ListViewer from './../components/ListViewer/ListViewer'
 
 interface HomeProps {
   title: string
@@ -17,6 +18,8 @@ const Home: FC<HomeProps> = ({ title, subTitle, content }) => {
       <section>
         <HomeContrainer content="This is contrainer" />
         <MySection content="hello this is content" />
+        <ListViewer title='List number(default)'/>
+        <ListViewer title='List string' list={['one', 'two', 'three', 'four', 'five', 'six']}/>
       </section>
     </>
   )
