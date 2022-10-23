@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { homeContrainerStyle } from './HomeContainerStyle'
+import './HomeContainer.scss'
 
 interface HomeContrainerProps {
   content: string
@@ -8,7 +8,7 @@ interface HomeContrainerProps {
 const HomeContrainer: FC<HomeContrainerProps> = ({ content }) => {
   return (
     <>
-      <div style={homeContrainerStyle}>
+      <div className='home-content'>
         <p>Home content: {content}</p>
       </div>
     </>
