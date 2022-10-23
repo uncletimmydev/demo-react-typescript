@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { mySectionStyle } from './MySectionStyle'
+import './MySection.scss'
 interface MySectionProps {
   content?: string
 }
@@ -7,7 +7,7 @@ interface MySectionProps {
 const MySection: FC<MySectionProps> = ({ content }) => {
   return (
     <>
-      <div style={mySectionStyle}>
+      <div className='my-section-style'>
         <p>Section content: {content ? content : ''}</p>
       </div>
     </>
